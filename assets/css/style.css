@@ -1,0 +1,190 @@
+/* ------------------------------
+   CONECTAONG - ESTILO BASE
+   Autor: [Seu Nome]
+   Data: 2025
+   ------------------------------ */
+
+/* RESET BÁSICO */
+
+@import url("reset.css");
+@import url("forms.css");
+@import url("responsive.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TIPOGRAFIA E CORES */
+:root {
+  --cor-primaria: #2b6cb0;
+  --cor-secundaria: #68d391;
+  --cor-texto: #333;
+  --cor-fundo: #f9f9f9;
+  --cor-footer: #1a202c;
+  --cor-branca: #fff;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* CABEÇALHO E NAVEGAÇÃO */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--cor-secundaria);
+  padding-left: 10px;
+}
+
+/* LISTAS E PARÁGRAFOS */
+ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* IMAGENS */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FORMULÁRIO */
+form {
+  background-color: var(--cor-branca);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid var(--cor-primaria);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 4px rgba(43, 108, 176, 0.4);
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--cor-footer);
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
