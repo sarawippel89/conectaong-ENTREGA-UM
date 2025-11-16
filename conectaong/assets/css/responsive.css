@@ -1,0 +1,38 @@
+/* ===== Responsividade - ConectaONG ===== */
+
+/* Layout padrão (mobile-first) */
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  header nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  form {
+    padding: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  header nav ul {
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  form {
+    max-width: 800px;
+  }
+}
+
