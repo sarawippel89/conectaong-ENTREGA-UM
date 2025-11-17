@@ -24,19 +24,7 @@ conectaong/
 ├── projetos.html
 │
 ├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── reset.css
-│   │   ├── forms.css
-│   │   └── responsive.css
-│   │
-│   ├── js/
-│   │   ├── masks.js
-│   │   ├── cep.js
-│   │   └── validations.js
-│   │
 │   ├── img/
 │   │   └── favicon.ico
 │   │   └── voluntarios.jpg
-│
 └── README.md
